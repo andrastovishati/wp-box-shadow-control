@@ -1,5 +1,5 @@
 # wordpress box-shadow control
-Extending the worrdpress customizer with a box-shadow control.
+Extending the wordpress customizer with a box-shadow control.
 
 ## Installation
 
