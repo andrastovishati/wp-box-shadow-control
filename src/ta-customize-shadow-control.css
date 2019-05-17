@@ -1,0 +1,63 @@
+/**
+ * WP Customze Control: Box Shadow Control.
+ * You can use it in your wordpress theme, or plugin.
+ *
+ * @copyright Copyright (c) 2019 / Andras Tovishati
+ * @license https://opensource.org/licenses/MIT
+ */
+
+.ta_box_shadow-scene {
+	width: 255px;
+	height: 255px;
+	border: 1px solid #aaa;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+}
+
+.ta_box_shadow-scene div.shadow-receiver {
+	border: inherit;
+	background: #ddd;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+.ta_box_shadow-scene svg.light {
+	width: 20px;
+	fill: yellow;
+	z-index: 9999;
+	transform: translateX(-10px) translateY(-10px);
+}
+
+.customize-control-ta_box_shadow label {
+	width: 100%;
+}
+
+.customize-control-ta_box_shadow input[data-key=h_offset],
+.customize-control-ta_box_shadow input[data-key=v_offset] {
+	width: 80px;
+}
+
+.customize-control-ta_box_shadow input[data-key=blur] {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 10px;
+	background: #aaa;
+	outline: none;
+	border-radius: 10px;
+	margin: 5px 0;
+}
+
+.customize-control-ta_box_shadow input[data-key=blur]::-webkit-slider-thumb {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #aaa;
+	border-radius: 100%;
+	background: #ddd;
+}
